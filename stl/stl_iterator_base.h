@@ -95,7 +95,8 @@ iterator_category(const random_access_iterator<class Tp, class Distance>) {
 }
 
 template <class _Tp>
-inline random_access_iterator_tag iterator_category(const _Tp *) {
+inline random_access_iterator_tag 
+iterator_category(const _Tp *) {
     return random_access_iterator_tag();
 }
 

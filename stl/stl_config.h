@@ -1,6 +1,6 @@
 #pragma once
 
-#define __STL_NAME LUOSC_STL
+#define __STL_NAME luosc_stl
 #define __STL_BEGIN_NAMESPACE namespace __STL_NAME {
 #define __STL_END_NAMESPACE }
 
