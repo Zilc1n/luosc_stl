@@ -2,15 +2,30 @@
 
 using namespace std;
 
-int foo(const int x) {
-    return x;
-}
+class base {
+public:
+    base() {
+        cout << "base construct\n";
+    }
+
+    ~base() {
+        cout << "base destroy\n";
+    }
+};
+
+class A : protected base {
+public:
+    typedef base Base;
+    A() {
+        cout << "A construct\n";
+    }
+    ~A() {
+        cout << "A de\n";
+    }
+};
 
 int main() {
-    int n = 3;
-    while (n > 0) {
-        cout << "1111\n";
-    }
+    A a = A();
 
     return 0;
 }
